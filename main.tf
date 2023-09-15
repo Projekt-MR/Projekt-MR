@@ -37,7 +37,7 @@ resource "aws_s3_bucket_acl" "example" {
 #s3 index objekt hochladen
 resource "aws_s3_object" "index" {
   bucket = aws_s3_bucket.mybucket.id
-  key = "idnex.html"
+  key = "index.html"
   source = "index.html"
   #objekt public machen
   acl = "public-read"
